@@ -31,6 +31,9 @@ const meta: Meta<typeof MyButton> = {
         defaultValue: { summary: 'default' },
       },
     },
+    onClick: {
+      action: 'clicked',
+    },
     children: {
       control: { type: 'text' },
     },
@@ -43,8 +46,7 @@ type Story = StoryObj<typeof MyButton>;
 export const Default: Story = {
   args: {
     children: 'Botão Padrão',
-    variant: "outline",
-    className: "text-pb"
+    variant: 'default',
   },
 };
 
