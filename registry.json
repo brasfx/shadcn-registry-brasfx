@@ -12,7 +12,7 @@
       "files": [
         {
           "path": "registry/new-york/ui/my-button/my-button.tsx",
-          "type": "registry:component"
+          "type": "registry:ui"
         }
       ]
     },
