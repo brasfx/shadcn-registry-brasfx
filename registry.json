@@ -4,6 +4,19 @@
   "homepage": "https://acme.com",
   "items": [
     {
+      "name": "my-button",
+      "type": "registry:block",
+      "title": "Custom button",
+      "description": "Um botão customizado para meus projetos.",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "registry/new-york/my-button/my-button.tsx",
+          "type": "registry:component"
+        }
+      ]
+    },
+    {
       "name": "hello-world",
       "type": "registry:component",
       "title": "Hello World",

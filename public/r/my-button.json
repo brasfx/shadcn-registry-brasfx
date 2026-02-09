@@ -1,0 +1,15 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "my-button",
+  "title": "Custom button",
+  "description": "Um botão customizado para meus projetos.",
+  "registryDependencies": [],
+  "files": [
+    {
+      "path": "registry/new-york/my-button/my-button.tsx",
+      "content": "import * as React from 'react';\r\n\r\ninterface MyButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {\r\n  variant?: 'default' | 'outline';\r\n}\r\n\r\nexport function MyButton({\r\n  variant = 'default',\r\n  className,\r\n  ...props\r\n}: MyButtonProps) {\r\n  const base =\r\n    'inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none';\r\n  const variants: Record<string, string> = {\r\n    default: 'bg-primary text-primary-foreground hover:bg-primary/90',\r\n    outline:\r\n      'border border-input bg-background hover:bg-accent hover:text-accent-foreground',\r\n  };\r\n\r\n  return (\r\n    <button\r\n      className={[base, variants[variant], className].filter(Boolean).join(' ')}\r\n      {...props}\r\n    />\r\n  );\r\n}\r\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}
