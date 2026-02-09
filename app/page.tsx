@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { OpenInV0Button } from '@/components/open-in-v0-button';
-import { MyButton } from '@/registry/new-york/my-button/my-button';
+import { MyButton } from '@/registry/new-york/ui/my-button/my-button';
 // This page displays items from the custom registry.
 // You are free to implement this with your own design as needed.
 

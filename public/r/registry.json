@@ -5,13 +5,13 @@
   "items": [
     {
       "name": "my-button",
-      "type": "registry:block",
+      "type": "registry:component",
       "title": "Custom button",
       "description": "Um botão customizado para meus projetos.",
       "registryDependencies": [],
       "files": [
         {
-          "path": "registry/new-york/my-button/my-button.tsx",
+          "path": "registry/new-york/ui/my-button/my-button.tsx",
           "type": "registry:component"
         }
       ]
